@@ -17,7 +17,7 @@ class Book {
 }
 
 void main() {
-  var myBook = Book('1984', 'George Orwell', 328);
+  var myBook = Book('White Fang', 'Jack London', 400);
   myBook.displayInfo();
 }
 
@@ -38,7 +38,7 @@ class Student {
 }
 
 void main() {
-  var student = Student('Alice', 20, [90, 85, 78, 92]);
+  var student = Student('Bobur', 20, [90, 85, 78, 92]);
   print('Average grade: ${student.calculateAverageGrade()}');
 }
 
@@ -68,7 +68,7 @@ class BankAccount {
 }
 
 void main() {
-  var account = BankAccount(12345, 'John Doe', 100.0);
+  var account = BankAccount(12345, 'Artur', 100.0);
   account.deposit(50);
   account.withdraw(30);
   account.withdraw(150);
@@ -160,9 +160,9 @@ class User {
 }
 
 void main() {
-  User user1 = User("Alice", UserRole.admin);
-  User user2 = User("Bob", UserRole.editor);
-  User user3 = User("Charlie", UserRole.guest);
+  User user1 = User("Anvar", UserRole.admin);
+  User user2 = User("Bobur", UserRole.editor);
+  User user3 = User("Davron", UserRole.guest);
 
   print("${user1.name} can edit: ${user1.hasEditPermission()}");
   print("${user2.name} can edit: ${user2.hasEditPermission()}");
@@ -279,8 +279,8 @@ class Manager extends Employee {
 }
 
 void main() {
-  var emp = Employee("Alice", 3000);
-  var mgr = Manager("Bob", 4000, 1000);
+  var emp = Employee("Anvar", 3000);
+  var mgr = Manager("Bobur", 4000, 1000);
 
   print("${emp.name}'s Salary: \$${emp.calculateSalary()}");
   print("${mgr.name}'s Salary: \$${mgr.calculateSalary()}");
@@ -427,3 +427,4 @@ void main() {
   guitarist.perform();
   guitarist.playInstrument();
 }
+
